@@ -1,6 +1,12 @@
 {{ partial "header.html" . }}
 {{ partial "page_title.html" . }}
-  <div class="ph3 ph4-m ph5-l flex items-stretch items-start flex-wrap flex-nowrap-l pb5">
+{{ range .Params.details }}
+<button class="accordion">{{ .title }}</button>
+<div class="panel">
+  <p style="margin-left: 30px">{{ .description }}</p>
+</div>
+{{ end }}
+  <!-- <div class="ph3 ph4-m ph5-l flex items-stretch items-start flex-wrap flex-nowrap-l pb5">
       <main class="pr4-l w-100 w-70-l">
         <div class="aspect-ratio w-100 aspect-ratio--16x9 mb4">
           <div class=" aspect-ratio--object z-2 bg-center cover" style="background-image: url(' {{ (trim .Params.featured_image "/") | absURL }}')"></div>
@@ -10,5 +16,22 @@
         </div>
       </main>
       {{ partial "faq-menu-contextual.html" . }}
-  </div>
+  </div> -->
 {{ partial "footer.html" . }}
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>

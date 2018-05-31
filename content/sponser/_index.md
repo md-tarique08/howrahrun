@@ -1,6 +1,6 @@
 ---
-title: Sponser/Partner
-seo_title: "Sponser/Partner | Howrah Monsoon Run"
+title: Partners
+seo_title: "Partners | Howrah Monsoon Run"
 seo_keywords: Howrah Monsoon Run
 seo_description: Howrah Monsoon Run
 ---

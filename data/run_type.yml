@@ -1,8 +1,11 @@
 run_types:
   - name: FAMILY RUN
     image: images/family_run.jpg
+    description: Details Coming soon
   - name: 10 KM RUN
     image: images/lone_runner.jpg
+    description: Details Coming soon
   - name: 5 KM RUN
     image: images/marathon_cover.jpg
+    description: Details Coming soon
     

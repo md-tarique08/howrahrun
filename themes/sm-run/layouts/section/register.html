@@ -1,23 +1,32 @@
 {{ partial "header.html" . }}
-{{ partial "page_title.html" . }}
-<div class="ph3 ph4-m ph5-l flex items-stretch items-start flex-wrap flex-nowrap-l pb5">
-    <main class="w-100">
-      <div class="content mb5">
-      </div>
-    <div class="flex items-start items-stretch nl3 nr3 flex-wrap">
-  {{ range .Site.Data.run_type.run_types }}
-    <div class="ph3 w-100 w-50-m w-third-l">
-      <a href="{{ .link }}" class="link db br2 bg-white ba b--black-20 mb4">
-        <div class="aspect-ratio w-100 aspect-ratio--16x9 mb4">
-          <div class=" aspect-ratio--object z-2 bg-center cover" style="background-image: url(' {{ (trim .image "/") | absURL }}')"></div>
-        </div> 
-        <h3 class="ttu tracked green tc">{{.name }}</h3> 
-      </a>
+<div class="flex items-stretch items-center flex-wrap">
+  <div class="w-100">
+    <div class="aspect-ratio aspect-ratio--3x1">
+      <div class="aspect-ratio--object z-1 bg-center cover" style="background-image: url(' {{ (trim .Params.featured_image "/") | absURL }}')"></div>
     </div>
-  {{ end }}
-</div>
-    </main>
   </div>
-
-
+</div>
+<div class="ph3 ph4-m ph5-l flex items-stretch items-start flex-wrap flex-nowrap-l pb5">
+  <main class="w-100">
+    <div class="content mb5">
+    </div>
+    <div class="flex items-start items-stretch nl3 nr3 flex-wrap">
+      {{ range .Site.Data.run_type.run_types }}
+      <div class="ph3 w-100 w-50-m w-third-l">
+        <div class="link db br2 bg-white ba b--black-20 mb4">
+          <div class="aspect-ratio w-100 aspect-ratio--16x9 mb4">
+            <div class=" aspect-ratio--object z-2 bg-center cover" style="background-image: url(' {{ (trim .image "/") | absURL }}')"></div>
+          </div>
+          <h2 class="ttu tracked green tc">{{.name }}</h2>
+          <hr style="color:red">
+          <h4 class="black tc">{{ .description }}</h4>
+        <div class="tc">
+          <a href="http://128.199.199.202:4100/" class="link bg-transparent bg-dark-red  ph2 pv2 br2 white hover-bg-dark-green  bw1 dib mv2 mx-auto bg-animate">Register</a>
+        </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </main>
+</div>
 {{ partial "footer.html" . }}

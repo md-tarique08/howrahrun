@@ -7,18 +7,25 @@ seo_description: >-
   Howrah Monsoon Run is the first monsoon marathon in Howrah. Events are Family Run, 10K run and 5K run.
 slides:
   - description: >-
-      Howrah Monsoon Run is the first monsoon marathon in Howrah. Events are Family Run, 10K run and 5K run.
+      5K run.
     image: images/marathon_cover.jpg
     link: /about
-    title: Family Run
+    title: 5K Run
+    date: 29 JUNE
+    details: Details coming soon!
   - description: Family Run.
     image: /images/family_run.jpg
     link: /about
-    title: 10K 
+    title: Family Run
+    date: 29 JUNE
+    details: Details coming soon!
   - description: >-
       10K.
     image: /images/lone_runner.jpg
     link: /about
+    title: 10K Run
+    date: 29 JUNE
+    details: Details coming soon!
 ---
 
 Howrah Marathon Run is held first time in howrah.

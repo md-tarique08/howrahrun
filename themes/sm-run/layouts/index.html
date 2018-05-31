@@ -4,7 +4,20 @@
   <div class="flex items-stretch items-center flex-wrap">
     <div class="w-100">
       <div class="aspect-ratio aspect-ratio--16x9">
-        <div class="aspect-ratio--object z-1 bg-center cover" style="background-image: url(' {{ (trim .image "/") | absURL }}')"></div>
+        <div class="aspect-ratio--object z-1 bg-center cover" style="background-image: url(' {{ (trim .image "/") | absURL }}')">
+          <div class="bg-black-50 pv4 pv3-ns measure white" style="margin-top: 150px !important">
+            <div class="f2 mt0 lh-title tl b ph3 ph5-ns white bb b--red pb3 mb3 bw2 heading-font"> {{ .title }}</div>
+            <div class="content measure ph3 ph5-ns pb2">
+            {{ .details }}
+          </div>
+          </div>
+          <div class="bg-black-50 pv4 pv3-ns measure white center" style="margin-left: 950px !important">
+            <div class="f2 mt0 lh-title tl b ph3 ph5-ns white bb b--red pb3 mb3 bw2 heading-font center">{{ .date }}</div>
+            <div class="mv2 ph3 ph5-ns">
+              <a href="/register" class="bg-red br2 white ph2 pv1 f6 link dib hover-bg-dark-red ttu tracked">Register</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -18,7 +31,7 @@
   </div>
 </section>
 <section class="pv5 bg-near-white ph3 ph4-m ph5-l">
-  <h2 class="f2 w-100 tc dark-blue ttu mt0">Sponser/Partners</h2>
+  <h2 class="f2 w-100 tc dark-blue ttu mt0">Partners</h2>
   {{ partial "separator.html" . }}
   <div class="slider js_variablewidth_awards variablewidth">
     <div class="tc mb3">
@@ -44,21 +57,19 @@
 </section>
 {{ partial "footer.html" . }}
 <script>
-  var variableWidth = document.querySelector('.js_variablewidth_awards');
-  var slider2 = lory(variableWidth, {
-  rewind: true
-  });
-
-  if(siema_interval){
-    clearInterval(siema_interval)
-  }
-  var mySiema = new Siema({duration:250,loop:true,});
-  var siema_interval = setInterval(()=>mySiema.next(),5000)
-
-  document.addEventListener("turbolinks:before-cache", function() {
-    mySiema.destroy()
-    if(slider1) slider1.destroy()
-    if(slider2) slider2.destroy()
-    if(slider3) slider3.destroy()
-  })
+var variableWidth = document.querySelector('.js_variablewidth_awards');
+var slider2 = lory(variableWidth, {
+rewind: true
+});
+if(siema_interval){
+clearInterval(siema_interval)
+}
+var mySiema = new Siema({duration:250,loop:true,});
+var siema_interval = setInterval(()=>mySiema.next(),5000)
+document.addEventListener("turbolinks:before-cache", function() {
+mySiema.destroy()
+if(slider1) slider1.destroy()
+if(slider2) slider2.destroy()
+if(slider3) slider3.destroy()
+})
 </script>

@@ -9,6 +9,78 @@ h1, h2, h3, h4, h5, h6{
 	font-family: "Muli", sans-serif;
 	font-style: italic;
 }
+
+.aspect-ratio--3x1{
+  padding-bottom: 20%;
+}
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+}
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+.accordion {
+    background-color: #bae1ea;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    width: 80%;
+    border: 1px solid #000;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc; 
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.product-on-home-page{
+  /* clip-path: polygon(
+    0 0, left top
+    100% 0, right top
+    85% 100%, right bottom
+    0 100% left bottom
+    ); */
+}
+.product-on-home-page-right, .map-slope{
+  /* clip-path: polygon(
+    0 0, left top
+    100% 0, right top
+    100% 100%, right bottom
+    15% 100% left bottom
+    ); */
+}
 .race-bg {
     background: #1FA2FF;
     background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);
@@ -341,4 +413,9 @@ h1, h2, h3, h4, h5, h6{
         width: 205px;
         margin-right: 20px;
     }
+}
+@media screen and (max-width: 767px) {
+  .aspect-ratio--3x1{
+    padding-bottom: 70%;
+  }
 }
