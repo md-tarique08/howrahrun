@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta property="og:type" content="website" />
+    {{ if .Params.seo_title }}
+    <title>{{.Params.seo_title}}</title>
+    <meta property="og:title" content="{{.Params.seo_title}}" />
+    {{else}}
+    <title>{{.Params.title}}</title>
+    <meta property="og:title" content="{{.Params.Title}}" />
+    {{ end }}
+    <meta property="og:description" content="{{.Params.seo_description}}" />
+    {{ if .Params.seo_description }}
+    <meta name="description" content="{{.Params.seo_description}}" />
+		{{end}}
+    {{ if .Params.seo_keywords }}
+    <meta name="keyowrds" content="{{.Params.seo_keywords}}" />
+		{{end}}
+		{{ if .Params.featured_image }}
+    <meta property="og:image" content="{{ (trim .Params.featured_image "/") | absURL }}" />
+		{{ else }}
+    <meta property="og:image" content="{{ (trim .Site.Data.meta.fb_cover "/") | absURL}}" />
+		{{end}}
+    <link href="https://fonts.googleapis.com/css?family=Muli:700i|Open+Sans:400,700" rel="stylesheet">
+    <link href="{{ "css/main.css" | absURL }}" rel="stylesheet" type="text/css" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script type="text/javascript" src='{{ "dist/bb.min.js" | absURL}}' data-turbolinks-eval="true"></script>
+    <script src="{{ "js/siema.min.js" | absURL }}" data-turbolinks-eval="true"></script>
+    <script src="{{ "js/lory.min.js" | absURL }}" data-turbolinks-eval="true"></script>
+    <script src="{{ "js/turbolinks.js" | absURL }}"></script>
+  </head>
+  <body class="pt4">
+    <header>
+      <nav class="ph3 ph4-m ph5-l bg-white shadow-1 z-5 pv2 fixed top-0 left-0 right-0 flex items-center">
+        <div class="flex-auto">
+          <a href="/" class="no-underline text-xl text-blue-dark hover:text-blue-darker font-bold inline-block py-2">Howrah Monsoon Run</a>
+        </div>
+       <!--  <div class="pr2">
+         Howrah Monsoon Run
+         <a href="/" class="link"><img src="{{ (trim .Site.Data.meta.logo "/") | absURL }}" alt="Adiba Infotech" class="nt2" style="max-height:55px;"></a>
+       </div> -->
+        <div class="flex-auto">
+          <a href="/" class="link f4 ttu tracked navy b"></a>
+        </div>
+        <div class="tr dn db-l">
+          <a class="link pa2 ttu f6 navy b dib" href="/">Home</a>
+          <a class="link pa2 ttu f6 navy b dib" href="/raceinfo">Race info</a>
+          <a class="link pa2 ttu f6 navy b dib" href="/raceweekend">Race Weekend</a>
+          <a class="link pa2 ttu f6 navy b dib" href="/register">Register</a>
+          <a class="link pa2 ttu f6 navy b dib" href="/faq" data-turbolinks="false">Faq</a>
+          <a class="link pa2 ttu f6 navy b dib" href="/contact" data-turbolinks="false">Contact</a>
+        </div>
+       <div class="tr db dn-l ba pa2 br2 pointer" onclick="toggle_mobile_menu()">
+          <div class="bg-navy mb1" style="height:4px; width:30px;"></div>
+          <div class="bg-navy mb1" style="height:4px; width:30px;"></div>
+          <div class="bg-navy" style="height:4px; width:30px;"></div>
+        </div>
+        <div id="mobile_nav" class="fixed top-0 right-0 bottom-0 w-80 w-50-m bg-white z-5 shadow-2 pv3 ph3 ph4-m dn">
+          <div class="flex items-start">
+            <a href="/" class="link flex-auto"><img src="{{ (trim .Site.Data.meta.logo "/") | absURL }}" alt="Adiba Infotech" class="nt1" style="max-height:90px;"></a>
+            <div class="tr db ba ph2 pv1 br2 pointer b lh-solid f3 b-black black" onclick="toggle_mobile_menu()">X</div>
+          </div>
+          <a class="link pv3 ttu f6 navy b db bb b--black-20 db" href="/">Home</a>
+          <a class="link pv3 ttu f6 navy b db bb b--black-20 db" href="/raceinfo">Race Info</a>
+          <a class="link pv3 ttu f6 navy b db bb b--black-20 db" href="/enquiry_form">Race Weekend</a>
+          <a class="link pv3 ttu f6 navy b db bb b--black-20 db" href="/register">Register</a>
+          <a class="link pv3 ttu f6 navy b db bb b--black-20 db" href="/faq">Faq</a>
+          <a class="link pv3 ttu f6 navy b db bb b--black-20 db" href="/contact" data-turbolinks="false">Contact</a>
+        </div>
+      </nav>
+    </header>

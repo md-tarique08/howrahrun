@@ -1,0 +1,77 @@
+<footer>
+  <div class="bg-navy ph3 ph5-ns pv4">
+    <div class="flex items-start flex-wrap nl2 nr2 justify-start">
+      <div class="w-100 w-50-l ph2 mb3 tc tl-m tr-l">
+        <h1 style="color: red"><p id="demo"></p></h1>
+      </div>
+    </div>
+  </div>
+<div class="bg-lightest-blue ph3 ph5-ns pv3">
+  <div class="flex item-start mxn2 flex-wrap pt1 justify-center">
+    <div class="px2">
+      <a class="link pa2 ttu f6 navy b dib" href="/">Home</a>
+          <a class="link pa2 ttu f6 navy b dib" href="/raceinfo">Race Info</a>
+          <a class="link pa2 ttu f6 navy b dib" href="/raceweekend">Race Weekend
+          </a>
+          <a class="link pa2 ttu f6 navy b dib" href="/register">Register
+          </a>
+           <a class="link pa2 ttu f6 navy b dib" href="/faq" data-turbolinks="false">Faq</a>
+          <a class="link pa2 ttu f6 navy b dib" href="/contact" data-turbolinks="false">Contact</a>
+    </div>
+  </div>
+</div>
+  
+<div class="bg-dark-red ph3 ph5-ns pv3">
+  <div class="flex items-start ph2">
+    <div class="white-70 flex-auto pr2">&copy Encash Entertainment {{dateFormat "2006" now }}
+    </div>
+    <div class="white f6 pl2">
+      Powered by <a href="http://slicedmango.com" class="white-80">Sliced Mango</a>
+    </div>
+  </div>
+</div>
+</footer>
+<script>
+  var toggle_mobile_menu = function(){
+    document.getElementById("mobile_nav").classList.toggle("dn")
+  }
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+
+var countDownDate = new Date("june 29, 2018 15:37:25").getTime();
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+{{ partial "page_title.html" . }}
+<div class="ph3 ph4-m ph5-l flex items-stretch items-start flex-wrap flex-nowrap-l pb5">
+    <main class="w-100">
+      <div class="content mb5">
+      </div>
+    <div class="flex items-start items-stretch nl3 nr3 flex-wrap">
+  {{ range .Site.Data.run_type.run_types }}
+    <div class="ph3 w-100 w-50-m w-third-l">
+      <a href="{{ .link }}" class="link db br2 bg-white ba b--black-20 mb4">
+        <div class="aspect-ratio w-100 aspect-ratio--16x9 mb4">
+          <div class=" aspect-ratio--object z-2 bg-center cover" style="background-image: url(' {{ (trim .image "/") | absURL }}')"></div>
+        </div> 
+        <h3 class="ttu tracked green tc">{{.name }}</h3> 
+      </a>
+    </div>
+  {{ end }}
+</div>
+    </main>
+  </div>
+
+
+{{ partial "footer.html" . }}
