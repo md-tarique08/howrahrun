@@ -31,22 +31,31 @@ h1, h2, h3, h4, h5, h6{
 #clockdiv div > span{
     padding: 15px;
     border-radius: 3px;
-    background: #00816A;
+    width: 40px;
+    max-width:40px;
+    min-width: 40px;
+    background: #E91E63;
     display: inline-block;
 }
-smalltext{
+#smalltext{
     padding-top: 5px;
     font-size: 16px;
 }
+
+.footer_top{
+background: #3494E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 .accordion {
-    background-color: #bae1ea;
+    background-color: #50e3ea;
     color: #444;
     cursor: pointer;
     padding: 18px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 65px;
     margin-bottom: 10px;
-    width: 80%;
+    width: 90%;
     border: 1px solid #000;
     text-align: left;
     outline: none;
@@ -55,7 +64,7 @@ smalltext{
 }
 
 .active, .accordion:hover {
-    background-color: #ccc; 
+    background-color: #618bea; 
 }
 
 .panel {

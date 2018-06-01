@@ -8,23 +8,23 @@ seo_description: >-
 slides:
   - description: >-
       5K run.
-    image: images/marathon_cover.jpg
+    image: images/1.jpg
     link: /about
     title: 5K Run
-    date: 29 JUNE
+    date: 29 JULY
     details: Details coming soon!
   - description: Family Run.
-    image: /images/family_run.jpg
+    image: /images/2.jpg
     link: /about
     title: Family Run
-    date: 29 JUNE
+    date: 29 JULY
     details: Details coming soon!
   - description: >-
       10K.
     image: /images/lone_runner.jpg
     link: /about
     title: 10K Run
-    date: 29 JUNE
+    date: 29 JULY
     details: Details coming soon!
 ---
 
