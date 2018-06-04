@@ -3,7 +3,7 @@
 {{ range .Params.details }}
 <button class="accordion">{{ .title }}</button>
 <div class="panel">
-  <p style="margin-left: 50px">{{ .description }}</p>
+  <p>{{ .description }}</p>
 </div>
 {{ end }}
   <!-- <div class="ph3 ph4-m ph5-l flex items-stretch items-start flex-wrap flex-nowrap-l pb5">
@@ -20,18 +20,20 @@
 {{ partial "footer.html" . }}
 
 <script>
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
 }
+
 </script>

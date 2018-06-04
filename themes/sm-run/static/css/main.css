@@ -48,7 +48,18 @@ background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-2
 background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-.accordion {
+/* .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+} */
+/* .accordion {
     background-color: #50e3ea;
     color: #444;
     cursor: pointer;
@@ -61,9 +72,9 @@ background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, F
     outline: none;
     font-size: 16px;
     transition: 0.4s;
-}
+} */
 
-.active, .accordion:hover {
+/* .active, .accordion:hover {
     background-color: #618bea; 
 }
 
@@ -72,7 +83,38 @@ background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, F
     display: none;
     background-color: white;
     overflow: hidden;
+} */
+.accordion {
+    background-color: #50e3ea;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 2px solid #000;
+    margin-bottom: 10px;
+    text-align: left;
+    border-radius: 25px;   
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
 }
+
+.active, .accordion:hover {
+    background-color: #618bea;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#rcorners1 {
+    
+}
+
 
 .product-on-home-page{
   /* clip-path: polygon(
