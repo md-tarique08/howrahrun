@@ -89,11 +89,12 @@ background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, F
     color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 80%;
     border: 2px solid #000;
     margin-bottom: 10px;
     text-align: left;
-    border-radius: 25px;   
+    border-radius: 25px; 
+    margin-left: 65px;  
     outline: none;
     font-size: 18px;
     transition: 0.4s;
