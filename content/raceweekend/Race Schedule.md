@@ -9,15 +9,16 @@ type: raceweekend
 
 ## Race Schedule
 
-## Friday, 24th August 2018
+## SUNDAY, 29th JULY
 
-Marathon Expo & Bib Pick up for Full Marathon, Half Marathon, 10K Run & 5K Fun Run.
+## 10K RUN
+### Reporting time 5:00 am
+### Start time 5:30 am
 
-#### 12:00 pm to 8:00 pm 
-#### HITEX, Madhapur, Hyderabad
+## 5K RUN
+### Reporting time 5:30 am
+### Start time 6:00 am
 
-## Saturday, 25th August 2018
-Marathon Expo & Bib Pick up for Full Marathon, Half Marathon & 10K Run.
-
-#### 10:00 am to 6:00 pm 
-#### HITEX, Madhapur, Hyderabad
+##  FAMILY RUN (3KM)
+### Reporting time 6:00 am
+### Start time 6:30 am

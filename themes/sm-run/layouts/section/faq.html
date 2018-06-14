@@ -1,10 +1,11 @@
 {{ partial "header.html" . }}
 {{ partial "page_title.html" . }}
 {{ range .Params.details }}
-<button class="accordion">{{ .title }}</button>
-<div class="panel">
-  <p style="margin-left: 65px">{{ .description }}</p>
-</div>
+<dl class="accordion">
+
+<dt><a href="">{{ .title }}</a></dt>
+<dd>{{ .description }}</dd>
+</dl>
 {{ end }}
   <!-- <div class="ph3 ph4-m ph5-l flex items-stretch items-start flex-wrap flex-nowrap-l pb5">
       <main class="pr4-l w-100 w-70-l">
@@ -20,20 +21,16 @@
 {{ partial "footer.html" . }}
 
 <script>
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+(function($) {
+    
+  var allPanels = $('.accordion > dd').hide();
+    
+  $('.accordion > dt > a').click(function() {
+    allPanels.slideUp();
+    $(this).parent().next().slideDown();
+    return false;
   });
-}
+
+})(jQuery);
 
 </script>

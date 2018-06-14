@@ -9,9 +9,47 @@ h1, h2, h3, h4, h5, h6{
 	font-family: "Muli", sans-serif;
 	font-style: italic;
 }
+.author_bio_toggle_wrapper    
+{
+        
+}
+
+#author_bio_wrap 
+{
+    margin-top: 0px;  
+    margin-bottom: 30px; 
+    background: gray;
+    width: auto; height: 50px;
+}
+
+
+.book-content {
+    box-shadow: 0 3rem 3rem -1rem rgba(10,10,10,.2);
+    max-width: 600px;
+    max-height: 400px;
+    padding: 3rem;
+}
+
+.bd-book-content{
+    background-color: #94daea47;
+    border-radius: 25px;
+    box-shadow: 0 1.5rem 1.5rem -1.25rem rgba(10,10,10,.05);
+    display: block;
+}
+.race-content {
+    box-shadow: 0 3rem 3rem -1rem rgba(10,10,10,.2);
+    padding: 3rem;
+}
+
+.bd-race-content{
+    background-color: #4FFBDF;
+    border-radius: 6px;
+    box-shadow: 0 1.5rem 1.5rem -1.25rem rgba(10,10,10,.05);
+    display: block;
+}
 
 .aspect-ratio--3x1{
-  padding-bottom: 20%;
+  padding-bottom: 22%;
 }
 
 #clockdiv{
@@ -48,69 +86,7 @@ background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-2
 background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-/* .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-} */
-/* .accordion {
-    background-color: #50e3ea;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    margin-left: 65px;
-    margin-bottom: 10px;
-    width: 90%;
-    border: 1px solid #000;
-    text-align: left;
-    outline: none;
-    font-size: 16px;
-    transition: 0.4s;
-} */
 
-/* .active, .accordion:hover {
-    background-color: #618bea; 
-}
-
-.panel {
-    padding: 0 18px;
-    display: none;
-    background-color: white;
-    overflow: hidden;
-} */
-.accordion {
-    background-color: #50e3ea;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 80%;
-    border: 2px solid #000;
-    margin-bottom: 10px;
-    text-align: left;
-    border-radius: 25px; 
-    margin-left: 65px;  
-    outline: none;
-    font-size: 18px;
-    transition: 0.4s;
-}
-
-.active, .accordion:hover {
-    background-color: #618bea;
-}
-
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
 
 #rcorners1 {
     
@@ -133,10 +109,50 @@ background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, F
     15% 100% left bottom
     ); */
 }
+
+.accordion {
+  /*margin: 50px;*/
+  margin-left: 50px;
+    margin-right: 50px;
+    margin-top: -15px;
+}
+.accordion dt, .accordion dd {
+  padding: 20px;
+  border: 1px solid black;
+  border-bottom: 0;
+}
+.accordion dt:last-of-type, .accordion dd:last-of-type {
+  border-bottom: 1px solid black;
+}
+.accordion dt a, .accordion dd a {
+  display: block;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.accordion dd {
+  border-top: 0;
+  font-size: 12px;
+}
+.accordion dd:last-of-type {
+  border-top: 1px solid white;
+  position: relative;
+  top: -1px;
+}
+
+
+.aspect-ratio--3x1{
+  padding:15%;
+}
 .race-bg {
     background: #1FA2FF;
     background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);
     background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);
+}
+.head-bg{
+background: #ee0979;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .text-xl {
     font-size: 1.25rem;

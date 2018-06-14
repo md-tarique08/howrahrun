@@ -1,11 +1,17 @@
 run_types:
-  - name: FAMILY RUN
+  - name: FAMILY RUN (3KM)
     image: images/family_run.jpg
-    description: Details Coming soon
+    fees: For 3 Member  Fees Rs. 600 , For Each additional child - Rs. 200 Extra
+    provide: T-Shirt & Refreshment provided by Organizer
+    eligibility: Age of the Kids 6yrs and above
   - name: 10 KM RUN
     image: images/lone_runner.jpg
-    description: Details Coming soon
+    fees: Individual Fees Rs. 500
+    provide: T-Shirt & Refreshment provided by Organizer
+    eligibility: Age of the Kids 10yrs and above
   - name: 5 KM RUN
     image: images/marathon_cover.jpg
-    description: Details Coming soon
+    fees: Individual Fees Rs. 500
+    provide: T-Shirt & Refreshment provided by Organizer
+    eligibility: Age of the Kids 8yrs and above
     
