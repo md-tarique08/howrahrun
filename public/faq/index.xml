@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FAQ on Howrah Monsoon Run</title>
+    <link>https://howrahrun.netlify.com/faq/</link>
+    <description>Recent content in FAQ on Howrah Monsoon Run</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://howrahrun.netlify.com/faq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How is Terrain/Run Route</title>
+      <link>https://howrahrun.netlify.com/faq/howisterrainrunroute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://howrahrun.netlify.com/faq/howisterrainrunroute/</guid>
+      <description>Details coming soon!</description>
+    </item>
+    
+    <item>
+      <title>When do the event start</title>
+      <link>https://howrahrun.netlify.com/faq/whendotheeventstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://howrahrun.netlify.com/faq/whendotheeventstart/</guid>
+      <description>Details coming soon!</description>
+    </item>
+    
+    <item>
+      <title>Who are the organizer of Howrah marathon</title>
+      <link>https://howrahrun.netlify.com/faq/whoaretheorganizersofhowrahmarathon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://howrahrun.netlify.com/faq/whoaretheorganizersofhowrahmarathon/</guid>
+      <description>Details coming soon!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Howrah Monsoon Run</title>
+    <link>https://howrahrun.netlify.com/</link>
+    <description>Recent content on Howrah Monsoon Run</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://howrahrun.netlify.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>10 KM Run</title>
+      <link>https://howrahrun.netlify.com/raceinfo/10-km-run/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://howrahrun.netlify.com/raceinfo/10-km-run/</guid>
+      <description> 10 KM Run </description>
+    </item>
+    
+    <item>
+      <title>5 KM Run</title>
+      <link>https://howrahrun.netlify.com/raceinfo/5-km-run/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://howrahrun.netlify.com/raceinfo/5-km-run/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Event</title>
+      <link>https://howrahrun.netlify.com/raceweekend/event/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://howrahrun.netlify.com/raceweekend/event/</guid>
+      <description> Event </description>
+    </item>
+    
+    <item>
+      <title>Expo</title>
+      <link>https://howrahrun.netlify.com/raceweekend/expo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://howrahrun.netlify.com/raceweekend/expo/</guid>
+      <description> SUNDAY, 29th JULY 2018 </description>
+    </item>
+    
+    <item>
+      <title>Family Run</title>
+      <link>https://howrahrun.netlify.com/raceinfo/family-run/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://howrahrun.netlify.com/raceinfo/family-run/</guid>
+      <description> Family Run </description>
+    </item>
+    
+    <item>
+      <title>How is Terrain/Run Route</title>
+      <link>https://howrahrun.netlify.com/faq/howisterrainrunroute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://howrahrun.netlify.com/faq/howisterrainrunroute/</guid>
+      <description>Details coming soon!</description>
+    </item>
+    
+    <item>
+      <title>Race Schedule</title>
+      <link>https://howrahrun.netlify.com/raceweekend/race-schedule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://howrahrun.netlify.com/raceweekend/race-schedule/</guid>
+      <description> Race Schedule SUNDAY, 29th JULY 10K RUN Reporting time 5:00 am Start time 5:30 am 5K RUN Reporting time 5:30 am Start time 6:00 am FAMILY RUN (3KM) Reporting time 6:00 am Start time 6:30 am </description>
+    </item>
+    
+    <item>
+      <title>When do the event start</title>
+      <link>https://howrahrun.netlify.com/faq/whendotheeventstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://howrahrun.netlify.com/faq/whendotheeventstart/</guid>
+      <description>Details coming soon!</description>
+    </item>
+    
+    <item>
+      <title>Who are the organizer of Howrah marathon</title>
+      <link>https://howrahrun.netlify.com/faq/whoaretheorganizersofhowrahmarathon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://howrahrun.netlify.com/faq/whoaretheorganizersofhowrahmarathon/</guid>
+      <description>Details coming soon!</description>
+    </item>
+    
+  </channel>
+</rss>
